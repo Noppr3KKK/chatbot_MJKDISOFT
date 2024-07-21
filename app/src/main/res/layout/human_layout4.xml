@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".NormalGenre">
+    <LinearLayout
+        android:padding="8dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_below="@+id/fotoProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@+id/fotoProfile"
+                android:background="@drawable/chat_bubble_incoming"
+                android:backgroundTint="#9000D9FF"
+                android:fontFamily="serif"
+                android:padding="8dp"
+                android:text="Hello, how are you?"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textTime"
+                android:layout_width="wrap_content"
+                android:layout_toStartOf="@+id/textMessage"
+                android:layout_marginEnd="8dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/textMessage"
+                android:text="12:00"
+                android:textColor="@color/white" />
+            <androidx.cardview.widget.CardView
+                android:layout_alignParentEnd="true"
+                android:id="@+id/fotoProfile"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:cardCornerRadius="250dp"
+                android:layout_gravity="center">
+
+                <FrameLayout
+                    android:background="#605555"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/human"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/person"
+                        app:tint="#FFFFFF" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

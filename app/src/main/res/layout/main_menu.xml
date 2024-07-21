@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pxfuel"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <GridLayout
+            android:layout_marginTop="100dp"
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:padding="16dp">
+
+            <!-- Item 1 -->
+            <TextView
+                android:id="@+id/normal"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:drawableTop="@drawable/gravityuifacerobot"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:padding="12dp"
+                android:text="Normal"
+                android:background="@drawable/shape"
+                android:textColor="@color/white"/>
+
+            <!-- Item 2 -->
+            <TextView
+                android:id="@+id/romantis"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:padding="12dp"
+                android:drawableTop="@drawable/romance"
+                android:text="Romance"
+                android:background="@drawable/shape"
+                android:textColor="@color/white"/>
+
+            <!-- Item 3 -->
+            <TextView
+                android:id="@+id/komedi"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:drawableTop="@drawable/comedy"
+                android:padding="12dp"
+                android:text="Comedy"
+                android:background="@drawable/shape"
+                android:textColor="@color/white"/>
+
+            <!-- Item 4 -->
+            <TextView
+                android:fontFamily="sans-serif-smallcaps"
+                android:id="@+id/teknologi"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:text="Technology"
+                android:drawableTop="@drawable/techicon"
+                android:padding="12dp"
+                android:background="@drawable/shape"
+                android:textColor="@color/white"/>
+        </GridLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logoapk"
+        android:alpha="0.5"
+    />
+    </RelativeLayout>
+</FrameLayout>
